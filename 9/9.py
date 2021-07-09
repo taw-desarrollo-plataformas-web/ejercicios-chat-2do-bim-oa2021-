@@ -20,7 +20,8 @@ Placa: gap0909
 Vehiculo.objects.filter(placa_contains="099") 
 
 # Opción b
-Vehiculo.objects.filter(placa.contains="099") 
+Vehiculo.objects.filter(placa__contains="099") 
+
 
 # Opción c
-Vehiculo.objects.filter(placa__contains="099") 
+Vehiculo.objects.filter(placa.contains="099") 
